@@ -32,7 +32,7 @@ import PriorityHighIcon from '@mui/icons-material/PriorityHigh'
 import RefreshIcon from '@mui/icons-material/Refresh'
 import SchoolIcon from '@mui/icons-material/School'
 import WorkIcon from '@mui/icons-material/Work'
-import { Log } from '../logging_middleware/log'
+import { Log } from '../../logging_middleware/log'
 import './App.css'
 
 const API_URL = 'http://20.207.122.201/evaluation-service/notifications'
