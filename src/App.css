@@ -1,0 +1,157 @@
+.app-shell {
+  min-height: 100svh;
+  background:
+    linear-gradient(180deg, rgba(37, 92, 153, 0.08), transparent 340px),
+    #f6f8fb;
+}
+
+.top-bar {
+  border-bottom: 1px solid #dfe6ef;
+}
+
+.toolbar {
+  min-height: 72px;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-mark,
+.notification-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #255c99;
+}
+
+.main-content {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.page-heading,
+.control-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page-heading {
+  margin-bottom: 24px;
+}
+
+.metric {
+  min-width: 112px;
+  padding: 12px 16px;
+}
+
+.control-strip {
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  border-color: #d8e2ee;
+}
+
+.filters {
+  align-items: center;
+}
+
+.select-icon {
+  margin-right: 8px;
+  color: #607084;
+}
+
+.status-alert {
+  margin-bottom: 18px;
+}
+
+.loading-area,
+.empty-state {
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.empty-state {
+  border-color: #d8e2ee;
+}
+
+.notification-card {
+  padding: 18px;
+  border-color: #d8e2ee;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.notification-card:hover {
+  border-color: #9ab3ce;
+  box-shadow: 0 12px 30px rgba(23, 33, 47, 0.08);
+  transform: translateY(-1px);
+}
+
+.notification-card.is-viewed {
+  background: #fbfcfe;
+}
+
+.notification-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+}
+
+.notification-icon.event {
+  color: #8b5a00;
+  background: #fff3d8;
+}
+
+.notification-icon.result {
+  color: #255c99;
+  background: #e5f0fb;
+}
+
+.notification-icon.placement {
+  color: #2f7d62;
+  background: #e3f3ed;
+}
+
+.notification-message {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .toolbar,
+  .page-heading,
+  .control-strip {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .toolbar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .desktop-divider {
+    display: none;
+  }
+
+  .filters,
+  .filters > .MuiStack-root,
+  .filters .MuiButton-root {
+    width: 100%;
+  }
+}
