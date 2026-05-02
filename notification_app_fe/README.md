@@ -24,6 +24,15 @@ http://localhost:3000
 - Protected API calls using `VITE_API_TOKEN` from `.env.local`.
 - Logging middleware integration through `../logging_middleware/log.js`.
 
+## Source Structure
+
+- `src/pages/` - page-level screens.
+- `src/components/` - reusable Material UI components.
+- `src/hooks/` - stateful notification loading and view-state logic.
+- `src/services/` - API and auth header helpers.
+- `src/utils/` - priority sorting and browser storage helpers.
+- `src/constants/` - shared notification constants.
+
 ## Environment
 
 Create `.env.local` in this folder with:
