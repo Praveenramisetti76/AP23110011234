@@ -8,6 +8,8 @@ function normalizeValue(value) {
   return String(value || '').trim().toLowerCase()
 }
 
+
+
 function getAuthHeaders() {
   const token =
     import.meta.env.VITE_API_TOKEN ||
@@ -16,6 +18,7 @@ function getAuthHeaders() {
 
   return token ? { Authorization: `Bearer ${token}` } : {}
 }
+
 
 export async function Log(stack, level, packageName, message) {
   const payload = {
@@ -40,6 +43,8 @@ export async function Log(stack, level, packageName, message) {
   if (!payload.message) {
     payload.message = 'Frontend event recorded without message'
   }
+
+
 
   try {
     const response = await fetch(LOG_API_URL, {
